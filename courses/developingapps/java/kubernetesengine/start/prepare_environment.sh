@@ -15,7 +15,7 @@ echo "Creating App Engine app"
 gcloud app create --region "us-west-2"
 
 echo "Making bucket: gs://$DEVSHELL_PROJECT_ID-media"
-gsutil mb gs://$DEVSHELL_PROJECT_ID-media
+aws s3 mb gs://$DEVSHELL_PROJECT_ID-media
 
 echo "Exporting GCLOUD_PROJECT and GCLOUD_BUCKET"
 export GCLOUD_PROJECT=$DEVSHELL_PROJECT_ID
