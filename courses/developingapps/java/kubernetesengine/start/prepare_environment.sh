@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 echo "Creating App Engine app"
-gcloud app create --region "us-central"
+gcloud app create --region "us-west-2"
 
 echo "Making bucket: gs://$DEVSHELL_PROJECT_ID-media"
 gsutil mb gs://$DEVSHELL_PROJECT_ID-media
